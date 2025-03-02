@@ -3,14 +3,7 @@
 import bs4
 import sys
 import requests
-
-
-
-
-
-
 import bs4
-
 
 def get_problem_difficulty(url):
     response = requests.get(url)
@@ -31,8 +24,6 @@ def main():
         newarg += "?tab=metadata"
         diff, level = get_problem_difficulty(newarg)
         print(f'{arg}: {diff} {level}')
-
-
 
 
 if __name__ == '__main__':
